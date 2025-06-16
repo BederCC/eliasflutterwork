@@ -113,8 +113,14 @@ class _MessagesScreenState extends State<MessagesScreen>
         return ListView.builder(
           itemCount: messages.length,
           itemBuilder: (context, index) {
-            final messageData = messages[index];
-            return _buildMessageItem(messageData, type);
+            final doc =
+                snapshot.data!.docs[index]; // Obtenemos el documento completo
+            final messageData = doc.data() as Map<String, dynamic>;
+            return _buildMessageItem(
+              messageData,
+              type,
+              doc.id,
+            ); // Pasamos el ID
           },
         );
       },
@@ -139,7 +145,11 @@ class _MessagesScreenState extends State<MessagesScreen>
     );
   }
 
-  Widget _buildMessageItem(Map<String, dynamic> messageData, String type) {
+  Widget _buildMessageItem(
+    Map<String, dynamic> messageData,
+    String type,
+    String messageId,
+  ) {
     final isUnread = type == 'received' && !messageData['read'];
 
     return FutureBuilder(
@@ -158,7 +168,7 @@ class _MessagesScreenState extends State<MessagesScreen>
         return GestureDetector(
           onTap: () {
             if (isUnread) {
-              _markAsRead(messageData['id']);
+              _markAsRead(messageId); // Usamos el ID que recibimos
             }
           },
           child: Card(
