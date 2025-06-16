@@ -4,6 +4,7 @@ import 'package:aplicacion1/firebase_options.dart';
 import 'package:aplicacion1/inventory_screen.dart';
 import 'package:aplicacion1/messages_screen.dart';
 import 'package:aplicacion1/products_screen.dart';
+import 'package:aplicacion1/ratings_screen.dart';
 import 'package:aplicacion1/users_screen.dart';
 import 'package:aplicacion1/user_products_screen.dart';
 import 'package:aplicacion1/assign_product_screen.dart';
@@ -52,10 +53,8 @@ class MyApp extends StatelessWidget {
         '/categories': (context) => const CategoriesScreen(),
         '/products': (context) => const ProductsScreen(),
         '/exchanges': (context) => const ExchangeScreen(),
-        '/messages': (context) =>
-            const MessagesScreen(), // Nueva ruta para mensajes
-        // '/ratings': (context) =>
-        //     const RatingsScreen(), // Nueva ruta para valoraciones
+        '/messages': (context) => const MessagesScreen(),
+        '/ratings': (context) => const RatingsScreen(),
         '/assign-product': (context) {
           final args =
               ModalRoute.of(context)!.settings.arguments

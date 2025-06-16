@@ -489,15 +489,11 @@ class _ExchangeScreenState extends State<ExchangeScreen>
                           ) {
                             final up = doc.data() as Map<String, dynamic>;
                             return DropdownMenuItem<String>(
-                              value:
-                                  up['productId']
-                                      as String, // Aseguramos que es String
+                              value: up['productId'] as String,
                               child: FutureBuilder<DocumentSnapshot>(
                                 future: _firestore
                                     .collection('productos')
-                                    .doc(
-                                      up['productId'] as String,
-                                    ) // Aseguramos que es String
+                                    .doc(up['productId'] as String)
                                     .get(),
                                 builder: (context, productSnapshot) {
                                   if (productSnapshot.hasError) {
