@@ -2,6 +2,7 @@ import 'package:aplicacion1/categories_screen.dart';
 import 'package:aplicacion1/exchanges_screen.dart';
 import 'package:aplicacion1/firebase_options.dart';
 import 'package:aplicacion1/inventory_screen.dart';
+import 'package:aplicacion1/messages_screen.dart';
 import 'package:aplicacion1/products_screen.dart';
 import 'package:aplicacion1/users_screen.dart';
 import 'package:aplicacion1/user_products_screen.dart';
@@ -51,8 +52,8 @@ class MyApp extends StatelessWidget {
         '/categories': (context) => const CategoriesScreen(),
         '/products': (context) => const ProductsScreen(),
         '/exchanges': (context) => const ExchangeScreen(),
-        // '/messages': (context) =>
-        //     const MessagesScreen(), // Nueva ruta para mensajes
+        '/messages': (context) =>
+            const MessagesScreen(), // Nueva ruta para mensajes
         // '/ratings': (context) =>
         //     const RatingsScreen(), // Nueva ruta para valoraciones
         '/assign-product': (context) {
