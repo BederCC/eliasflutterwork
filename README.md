@@ -1,6 +1,6 @@
 # 🔄 EcoIntercambio - App de Trueque Sostenible
 
-![Logo o Captura Principal](screenshots/demo.jpg) *[(Reemplazar con imagen real)]*
+![Logo o Captura Principal](screenshots/demo.jpg)
 
 Aplicación móvil para intercambiar productos/servicios de manera sostenible, conectando usuarios con intereses comunes.
 
@@ -17,22 +17,19 @@ Aplicación móvil para intercambiar productos/servicios de manera sostenible, c
 - **Backend**: Firebase
   - Autenticación (Firebase Auth)
   - Base de datos: Firestore
-  - Almacenamiento: Firebase Storage *(si aplica)*
+  - Almacenamiento: Firebase Storage
 
-## 📦 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 ```plaintext
 lib/
-├── auth/                     # Autenticación
-├── screens/                  # Pantallas principales
-│   ├── categories_screen.dart
-│   ├── exchanges_screen.dart
-│   ├── inventory_screen.dart
-│   ├── messages_screen.dart
-│   ├── products_screen.dart
-│   ├── ratings_screen.dart
-│   ├── users_screen.dart
-│   ├── user_products_screen.dart
-│   └── assign_product_screen.dart
-├── models/                  # Entidades (User, Product, etc.)
-├── services/                # Lógica de Firebase
-└── main.dart                # Punto de entrada
+├── assign_product_screen.dart    # Asignación de productos
+├── categories_screen.dart       # Gestión de categorías
+├── exchanges_screen.dart        # Historial de intercambios
+├── firebase_options.dart        # Configuración de Firebase
+├── inventory_screen.dart        # Inventario de usuario
+├── main.dart                    # Punto de entrada (con autenticación)
+├── messages_screen.dart         # Sistema de mensajería
+├── products_screen.dart         # Catálogo de productos
+├── ratings_screen.dart          # Valoraciones
+├── user_products_screen.dart    # Productos del usuario
+└── users_screen.dart            # Gestión de perfiles
