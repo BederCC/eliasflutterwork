@@ -1,16 +1,38 @@
-# aplicacion1
+# 🔄 EcoIntercambio - App de Trueque Sostenible
 
-A new Flutter project.
+![Logo o Captura Principal](screenshots/demo.jpg) *[(Reemplazar con imagen real)]*
 
-## Getting Started
+Aplicación móvil para intercambiar productos/servicios de manera sostenible, conectando usuarios con intereses comunes.
 
-This project is a starting point for a Flutter application.
+## 🌱 Entidades Principales
+- **Usuarios**: Perfiles con datos personales e historial.
+- **Productos/Servicios**: Items disponibles para intercambio.
+- **Categorías**: Alimentos, ropa, reciclaje, etc.
+- **Intercambios**: Registro de transacciones completadas.
+- **Mensajes**: Chat integrado entre usuarios.
+- **Valoraciones**: Sistema de reputación post-intercambio.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Tecnologías
+- **Frontend**: Flutter (Dart)
+- **Backend**: Firebase
+  - Autenticación (Firebase Auth)
+  - Base de datos: Firestore
+  - Almacenamiento: Firebase Storage *(si aplica)*
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📦 Estructura del Proyecto
+```plaintext
+lib/
+├── auth/                     # Autenticación
+├── screens/                  # Pantallas principales
+│   ├── categories_screen.dart
+│   ├── exchanges_screen.dart
+│   ├── inventory_screen.dart
+│   ├── messages_screen.dart
+│   ├── products_screen.dart
+│   ├── ratings_screen.dart
+│   ├── users_screen.dart
+│   ├── user_products_screen.dart
+│   └── assign_product_screen.dart
+├── models/                  # Entidades (User, Product, etc.)
+├── services/                # Lógica de Firebase
+└── main.dart                # Punto de entrada
