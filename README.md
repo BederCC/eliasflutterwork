@@ -1,6 +1,4 @@
 # 🔄 Intercambio - App de Trueque
-
-
 Aplicación móvil para intercambiar productos/servicios de manera sostenible, desarrollada por **[Beder Casa Condori](https://www.linkedin.com/in/beder-danilo-casa-condori-85520217b/)** como parte del ecosistema [VoltoraDevs](https://voltoradevs.tech).
 
 ## 🌱 Entidades Principales
@@ -32,5 +30,5 @@ lib/
 ├── ratings_screen.dart          # Valoraciones
 ├── user_products_screen.dart    # Productos del usuario
 └── users_screen.dart            # Gestión de perfiles
-
+```
 ![App Preview](screenshots/demo.jpg)
