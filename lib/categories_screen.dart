@@ -51,9 +51,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     _editingCategoryId = categoryDoc.id;
     final categoryData = categoryDoc.data() as Map<String, dynamic>;
 
-    _nameController.text = categoryData['nombre'] ?? ''; // Manejo de null
-    _descriptionController.text =
-        categoryData['descripcion'] ?? ''; // Manejo de null
+    _nameController.text = categoryData['nombre'] ?? '';
+    _descriptionController.text = categoryData['descripcion'] ?? '';
 
     _openCategoryForm();
   }
@@ -72,7 +71,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     try {
       final data = {'nombre': name, 'updatedAt': FieldValue.serverTimestamp()};
 
-      // Solo agregar descripción si no está vacía
       if (description.isNotEmpty) {
         data['descripcion'] = description;
       }
