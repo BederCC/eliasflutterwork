@@ -1,8 +1,7 @@
-# 🔄 EcoIntercambio - App de Trueque Sostenible
+# 🔄 Intercambio - App de Trueque
 
-![Logo o Captura Principal](screenshots/demo.jpg)
 
-Aplicación móvil para intercambiar productos/servicios de manera sostenible, conectando usuarios con intereses comunes.
+Aplicación móvil para intercambiar productos/servicios de manera sostenible, desarrollada por **[Beder Casa Condori](https://www.linkedin.com/in/beder-danilo-casa-condori-85520217b/)** como parte del ecosistema [VoltoraDevs](https://voltoradevs.tech).
 
 ## 🌱 Entidades Principales
 - **Usuarios**: Perfiles con datos personales e historial.
@@ -15,11 +14,11 @@ Aplicación móvil para intercambiar productos/servicios de manera sostenible, c
 ## 🛠 Tecnologías
 - **Frontend**: Flutter (Dart)
 - **Backend**: Firebase
-  - Autenticación (Firebase Auth)
-  - Base de datos: Firestore
-  - Almacenamiento: Firebase Storage
+  - 🔐 Autenticación (Firebase Auth)
+  - 🗃️ Base de datos: Firestore
+  - 📦 Almacenamiento: Firebase Storage
 
-## 📂 Estructura del Proyecto
+## 📂 Estructura del Código
 ```plaintext
 lib/
 ├── assign_product_screen.dart    # Asignación de productos
@@ -33,3 +32,5 @@ lib/
 ├── ratings_screen.dart          # Valoraciones
 ├── user_products_screen.dart    # Productos del usuario
 └── users_screen.dart            # Gestión de perfiles
+
+![App Preview](screenshots/demo.jpg)
